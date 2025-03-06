@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sstudize - JEE Coaching</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="ques.css" />
+  <!-- Chart.js for pie chart on Insights page -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <!-- Update the image path to something valid in your project -->
+      <img src="c:\Users\GURUPRASATH SP\OneDrive\Documents\sstudize\Screenshot 2025-03-06 002653.png" alt="Sstudize Logo" />
+      <h1>Sstudize</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="loadHomePage()">Home</a></li>
+        <li><a href="#" onclick="loadTaskPage()">Task</a></li>
+        <li><a href="#" onclick="loadInsightsPage()">Insights</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Login & Signup Container -->
+    <div class="login-signup-container" id="login-container">
+      <div class="form-box">
+        <h2>Login</h2>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" id="login-email" />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" id="login-password" />
+        </div>
+        <button onclick="login()">Login</button>
+        <p>
+          Don't have an account?
+          <a href="#" onclick="showSignup()">Sign up</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="login-signup-container hidden" id="signup-container">
+      <div class="form-box">
+        <h2>Sign Up</h2>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" id="signup-email" />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            placeholder="Password"
+            id="signup-password"
+          />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="confirm-password"
+          />
+        </div>
+        <button onclick="signup()">Sign Up</button>
+        <p>
+          Already have an account?
+          <a href="#" onclick="showLogin()">Login</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Home Page -->
+    <section class="home-container hidden" id="main-website">
+      <h2>Welcome to Sstudize</h2>
+      <p>
+        Sstudize is a cutting-edge EdTech company revolutionizing JEE coaching
+        through AI-powered learning. We provide personalized learning paths,
+        AI-driven insights, and comprehensive resources to help students excel
+        in their JEE exams. Our goal is to make JEE preparation effective,
+        engaging, and accessible to all.
+      </p>
+      <button class="cta-button" onclick="loadTaskPage()">
+        Start Your JEE Prep Today
+      </button>
+    </section>
+
+    <!-- Task Page (Quiz) -->
+    <section class="task-container hidden" id="task-page">
+      <div class="task-box">
+        <h2>JEE Skill Assessment</h2>
+        <div id="timer">Time: 10:00</div>
+        <div id="question-container">
+          <!-- Questions will be loaded here dynamically -->
+        </div>
+        <button id="submit-button" onclick="endQuiz()">Submit</button>
+      </div>
+    </section>
+
+    <!-- Insights Page -->
+    <section class="insights-container hidden" id="insights-page">
+      <h2>Your Insights</h2>
+      <canvas id="myChart" width="400" height="200"></canvas>
+      <p id="time-taken"></p>
+      <p id="final-score"></p>
+      <p id="correct-answers"></p>
+      <div id="soca-analysis">
+        <!-- SOCA analysis will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sstudize. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript -->
+  <script src="ques.js"></script>
+</body>
+</html>
