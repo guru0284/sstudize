@@ -125,20 +125,25 @@ let questions = [
   {
     type: "short-answer",
     question: "Explain the concept of conservation of energy with an example.",
+    answer: "Conservation of energy states that the total energy of an isolated system remains constant over time. Energy can neither be created nor destroyed, only transformed from one form to another. For example, a swinging pendulum constantly converts potential energy to kinetic energy and back, but the total energy remains the same.",
+
   },
   {
     type: "short-answer",
     question: "Describe the difference between ionic and covalent bonds.",
+    answer: "Ionic bonds form between a metal and a non-metal through the transfer of electrons, resulting in oppositely charged ions that attract each other. Covalent bonds form between two non-metals by sharing electrons to achieve a stable electron configuration.",
   },
   {
     type: "scale",
     question: "How often do you create a study schedule?",
     options: ["1 - Never", "2", "3", "4", "5 - Always"],
+    answer: ["1 - Never", "2", "3", "4", "5 - Always"],
   },
   {
     type: "scale",
     question: "How well do you stick to your study schedule?",
     options: ["1 - Not at all", "2", "3", "4", "5 - Very well"],
+    answer: ["1 - Not at all", "2", "3", "4", "5 - Very well"],
   },
   {
     type: "multiple-choice",
@@ -149,10 +154,17 @@ let questions = [
       "Very noisy and distracting",
       "I study wherever I can find the time",
     ],
+    answer:[
+      "Quiet and free from distractions",
+      "Somewhat noisy but manageable",
+      "Very noisy and distracting",
+      "I study wherever I can find the time",
+    ],
   },
   {
     type: "short-answer",
     question: "Describe a typical study day. How do you allocate time to different subjects?",
+    answer: "A typical study day involves waking up early to revise the previous day's work, followed by focused study sessions for each subject. I allocate more time to difficult subjects and take short breaks in between to stay fresh and focused.",
   },
   {
     type: "scenario",
@@ -164,10 +176,17 @@ let questions = [
       "Take a break and come back to it later.",
       "Look up the solution online.",
     ],
+    answer:[
+      "Keep trying until you solve it, no matter how long it takes.",
+      "Ask a friend or teacher for help immediately.",
+      "Take a break and come back to it later.",
+      "Look up the solution online.",
+    ],
   },
   {
     type: "short-answer",
     question: "Describe your approach to solving a complex Physics problem. What steps do you take?",
+    answer: "My approach involves breaking down the problem into smaller parts, identifying the key concepts involved, and applying relevant formulas and principles. I also draw diagrams and visualize the problem to gain a better understanding.",
   },
   {
     type: "multiple-choice",
@@ -178,11 +197,18 @@ let questions = [
       "Give up easily?",
       "Seek help from others?",
     ],
+    answer:[
+      "Break it down into smaller parts?",
+      "Try to find a similar solved problem?",
+      "Give up easily?",
+      "Seek help from others?",
+    ],
   },
   {
     type: "scale",
     question: "How stressed do you feel about the JEE exam?",
     options: ["1 - Not at all", "2", "3", "4", "5 - Extremely stressed"],
+    answer: ["1 - Not at all", "2", "3", "4", "5 - Extremely stressed"],
   },
   {
     type: "multiple-choice",
@@ -194,18 +220,28 @@ let questions = [
       "Watching movies/TV shows",
       "I don't cope well with stress.",
     ],
+    answer: [
+      "Exercise",
+      "Meditation/Relaxation techniques",
+      "Spending time with friends/family",
+      "Watching movies/TV shows",
+      "I don't cope well with stress.",
+    ],
   },
   {
     type: "short-answer",
     question: "What strategies do you use to maintain a positive attitude during your JEE preparation?",
+    answer: "I maintain a positive attitude by setting realistic goals, celebrating small victories, and reminding myself of the bigger picture. I also practice mindfulness and positive self-talk to stay motivated and focused.",
   },
   {
     type: "yes-no",
     question: "Do you get enough sleep on most nights?",
+    answer: ["Yes","No"],
   },
   {
     type: "yes-no",
     question: "Do you take regular breaks during your study sessions?",
+    answer: ["Yes","No"],
   },
   {
     type: "multiple-choice",
@@ -217,20 +253,30 @@ let questions = [
       "Practice papers",
       "Previous years' question papers",
     ],
+    answer:[
+      "Textbooks",
+      "Coaching classes",
+      "Online resources (e.g., Khan Academy, YouTube)",
+      "Practice papers",
+      "Previous years' question papers",
+    ],
   },
   {
     type: "scale",
     question: "How helpful do you find your coaching classes?",
     options: ["1 - Not at all", "2", "3", "4", "5 - Extremely helpful"],
+    answer: ["1 - Not at all", "2", "3", "4", "5 - Extremely helpful"],
   },
   {
     type: "short-answer",
     question: "Describe your preferred study techniques. What works best for you?",
+    answer: "My preferred study techniques include active learning, self-testing, and spaced repetition. I also use mnemonics, flashcards, and mind maps to aid memory retention and understanding.",
   },
   {
     type: "multiple-choice",
     question: "What time of day do you study best?",
     options: ["Morning", "Afternoon", "Evening", "Night"],
+    answer: ["Morning", "Afternoon", "Evening", "Night"],
   },
 ];
 
